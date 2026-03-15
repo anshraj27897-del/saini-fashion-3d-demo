@@ -1,21 +1,16 @@
-function openProduct(name,price,image){
+let slides=document.querySelectorAll(".slide")
+let i=0
 
-document.getElementById("popup").style.display="flex"
+setInterval(()=>{
+slides[i].classList.remove("active")
+i=(i+1)%slides.length
+slides[i].classList.add("active")
+},3000)
 
-document.getElementById("productName").innerText=name
+function order(){
 
-document.getElementById("productPrice").innerText=price
-
-document.getElementById("productImage").src=image
-
-document.getElementById("whatsappLink").href=
-
-"https://wa.me/918107053133?text=I want to buy "+name
-
-}
-
-function closeProduct(){
-
-document.getElementById("popup").style.display="none"
+window.open(
+"https://wa.me/918107053133?text=I want to order from Saini Fashion Hub"
+)
 
 }
