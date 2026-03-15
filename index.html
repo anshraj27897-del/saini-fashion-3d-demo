@@ -1,161 +1,99 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Saini Fashion Hub</title>
-
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
 <header>
 
-<h1>SAINI FASHION HUB</h1>
+<div class="logo">SAINI FASHION HUB</div>
 
 <nav>
-
-<a href="#">Home</a>
-<a href="#shop">Shop</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-
+<a href="#">Men</a>
+<a href="#">Women</a>
+<a href="#">Kids</a>
+<a href="#">Offers</a>
 </nav>
+
+<input class="search" placeholder="Search for products">
 
 </header>
 
-
-<!-- HERO -->
-
 <section class="hero">
 
-<div class="hero-text">
+<div class="slide active">
+<img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
+</div>
 
-<h2>Premium Fashion Store</h2>
-<p>Best quality shirts, pants & shoes</p>
+<div class="slide">
+<img src="https://images.unsplash.com/photo-1520975922284-5d0d8f2a6f7c">
+</div>
 
+<div class="slide">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
 </div>
 
 </section>
 
+<h2 class="title">Trending Products</h2>
 
-<!-- PRODUCTS -->
+<section class="products">
 
-<section id="shop">
-
-<h2 class="title">Featured Products</h2>
-
-<div class="products">
-
-<div class="card" onclick="openProduct('Stylish Shirt','₹899','https://picsum.photos/400?1')">
-
-<img src="https://picsum.photos/400?1">
-
-<h3>Stylish Shirt</h3>
-<p>₹899</p>
-
+<div class="card">
+<img src="https://images.unsplash.com/photo-1520975922284-5d0d8f2a6f7c">
+<h3>Formal Shirt</h3>
+<p>₹999</p>
+<button onclick="order()">Buy Now</button>
 </div>
 
-
-<div class="card" onclick="openProduct('Casual T-Shirt','₹599','https://picsum.photos/400?2')">
-
-<img src="https://picsum.photos/400?2">
-
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
 <h3>Casual T-Shirt</h3>
 <p>₹599</p>
-
+<button onclick="order()">Buy Now</button>
 </div>
 
-
-<div class="card" onclick="openProduct('Blue Jeans','₹1199','https://picsum.photos/400?3')">
-
-<img src="https://picsum.photos/400?3">
-
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7">
 <h3>Blue Jeans</h3>
 <p>₹1199</p>
-
+<button onclick="order()">Buy Now</button>
 </div>
 
-
-<div class="card" onclick="openProduct('Sports Shoes','₹1999','https://picsum.photos/400?4')">
-
-<img src="https://picsum.photos/400?4">
-
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
 <h3>Sports Shoes</h3>
 <p>₹1999</p>
-
+<button onclick="order()">Buy Now</button>
 </div>
 
+<div class="card">
+<img src="https://images.unsplash.com/photo-1583743814966-8936f37f4c0d">
+<h3>Hoodie</h3>
+<p>₹1499</p>
+<button onclick="order()">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+<h3>Leather Jacket</h3>
+<p>₹2999</p>
+<button onclick="order()">Buy Now</button>
 </div>
 
 </section>
-
-
-<!-- POPUP -->
-
-<div id="popup" class="popup">
-
-<div class="popup-content">
-
-<span onclick="closeProduct()">✖</span>
-
-<img id="productImage">
-
-<h2 id="productName"></h2>
-
-<p id="productPrice"></p>
-
-<a id="whatsappLink">
-
-<button>Order on WhatsApp</button>
-
-</a>
-
-</div>
-
-</div>
-
-
-<!-- ABOUT -->
-
-<section id="about">
-
-<h2>About Us</h2>
-
-<p>
-
-Saini Fashion Hub provides premium clothing including shirts,
-pants, jackets and shoes with stylish design and affordable price.
-
-</p>
-
-</section>
-
-
-<!-- MAP -->
-
-<section id="contact">
-
-<h2>Our Location</h2>
-
-<iframe
-src="https://maps.google.com/maps?q=behror%20rajasthan&t=&z=13&ie=UTF8&iwloc=&output=embed">
-</iframe>
-
-</section>
-
 
 <footer>
 
-<p>Contact : 8107053133</p>
-
+<p>Contact: 8107053133</p>
 <p>Near Girls Sr Sec School Sainipura Behror</p>
 
 </footer>
-
 
 <script src="script.js"></script>
 
