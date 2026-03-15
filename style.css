@@ -27,56 +27,18 @@ text-decoration:none;
 
 .hero{
 
-position:relative;
-height:500px;
-overflow:hidden;
+height:400px;
 
-}
+background:url("https://picsum.photos/1200/600") center/cover;
 
-.slider img{
-
-width:100%;
-height:500px;
-object-fit:cover;
-position:absolute;
-animation:slide 15s infinite;
-
-}
-
-.slider img:nth-child(2){
-
-animation-delay:5s;
-
-}
-
-.slider img:nth-child(3){
-
-animation-delay:10s;
-
-}
-
-@keyframes slide{
-
-0%{opacity:0}
-10%{opacity:1}
-30%{opacity:1}
-40%{opacity:0}
+display:flex;
+align-items:center;
+justify-content:center;
 
 }
 
 .hero-text{
 
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-text-align:center;
-
-}
-
-.about{
-
-padding:40px;
 text-align:center;
 
 }
@@ -91,8 +53,11 @@ margin:40px;
 .products{
 
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
 gap:20px;
+
 padding:20px;
 
 }
@@ -100,9 +65,20 @@ padding:20px;
 .card{
 
 background:#1a1a1a;
+
 padding:15px;
+
 border-radius:10px;
+
 cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:scale(1.05);
 
 }
 
@@ -118,12 +94,17 @@ border-radius:8px;
 .popup{
 
 display:none;
+
 position:fixed;
+
 top:0;
 left:0;
+
 width:100%;
 height:100%;
+
 background:rgba(0,0,0,0.8);
+
 justify-content:center;
 align-items:center;
 
@@ -132,19 +113,35 @@ align-items:center;
 .popup-content{
 
 background:#222;
+
 padding:30px;
+
 border-radius:10px;
+
 text-align:center;
+
+}
+
+.popup img{
+
+width:250px;
+
+margin-bottom:20px;
 
 }
 
 button{
 
 background:#25D366;
+
 border:none;
+
 padding:12px 25px;
+
 color:white;
+
 border-radius:5px;
+
 cursor:pointer;
 
 }
@@ -153,6 +150,7 @@ iframe{
 
 width:100%;
 height:400px;
+
 border:none;
 
 }
@@ -160,7 +158,9 @@ border:none;
 footer{
 
 background:black;
+
 text-align:center;
+
 padding:20px;
 
 }
