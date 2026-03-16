@@ -1,101 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saini Fashion Hub</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saini Fashion Hub - Premium Fashion for Everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-
 <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>Saini Fashion Hub</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-link active">Women</a>
+                <a href="#" class="nav-link">Men</a>
+                <a href="#" class="nav-link">Kids</a>
+                <a href="#" class="nav-link">Offers</a>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search fashion...">
+                </div>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </header>
 
-<header>
+    <!-- Hero Banner Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200&h=500&fit=crop" alt="Women Fashion">
+                <div class="slide-content">
+                    <h1>Trendy Women's Collection</h1>
+                    <p>Discover the latest fashion trends</p>
+                    <button class="cta-btn">Shop Now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=500&fit=crop" alt="Men Fashion">
+                <div class="slide-content">
+                    <h1>Men's Premium Collection</h1>
+                    <p>Style that defines you</p>
+                    <button class="cta-btn">Shop Now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1200&h=500&fit=crop" alt="Kids Fashion">
+                <div class="slide-content">
+                    <h1>Kids Fashion</h1>
+                    <p>Cute & Comfortable</p>
+                    <button class="cta-btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
 
-<div class="logo">SAINI FASHION HUB</div>
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
 
-<nav>
-<a href="#">Men</a>
-<a href="#">Women</a>
-<a href="#">Kids</a>
-<a href="#">Offers</a>
-</nav>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Saini Fashion Hub. All rights reserved.</p>
+        </div>
+    </footer>
 
-<input class="search" placeholder="Search for products">
-
-</header>
-
-<section class="hero">
-
-<div class="slide active">
-<img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
-</div>
-
-<div class="slide">
-<img src="https://images.unsplash.com/photo-1520975922284-5d0d8f2a6f7c">
-</div>
-
-<div class="slide">
-<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
-</div>
-
-</section>
-
-<h2 class="title">Trending Products</h2>
-
-<section class="products">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1520975922284-5d0d8f2a6f7c">
-<h3>Formal Shirt</h3>
-<p>₹999</p>
-<button onclick="order()">Buy Now</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
-<h3>Casual T-Shirt</h3>
-<p>₹599</p>
-<button onclick="order()">Buy Now</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7">
-<h3>Blue Jeans</h3>
-<p>₹1199</p>
-<button onclick="order()">Buy Now</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
-<h3>Sports Shoes</h3>
-<p>₹1999</p>
-<button onclick="order()">Buy Now</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1583743814966-8936f37f4c0d">
-<h3>Hoodie</h3>
-<p>₹1499</p>
-<button onclick="order()">Buy Now</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
-<h3>Leather Jacket</h3>
-<p>₹2999</p>
-<button onclick="order()">Buy Now</button>
-</div>
-
-</section>
-
-<footer>
-
-<p>Contact: 8107053133</p>
-<p>Near Girls Sr Sec School Sainipura Behror</p>
-
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
