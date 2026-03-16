@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Saini Fashion Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2><a href="index.html">Saini Fashion Hub</a></h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html#women" class="nav-link">Women</a>
+                <a href="index.html#men" class="nav-link">Men</a>
+                <a href="index.html#kids" class="nav-link">Kids</a>
+                <a href="index.html#offers" class="nav-link">Offers</a>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search fashion...">
+                </div>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-container">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="mainProductImage" src="" alt="Product">
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <img class="thumb active" src="" alt="Thumb 1" data-img="">
+                        <img class="thumb" src="" alt="Thumb 2" data-img="">
+                        <img class="thumb" src="" alt="Thumb 3" data-img="">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1 id="productTitle"></h1>
+                    <div class="price-section">
+                        <span class="price" id="productPrice"></span>
+                        <span class="original-price" id="originalPrice"></span>
+                    </div>
+                    <div class="product-description">
+                        <p>Premium quality fabric with modern design. Perfect fit for all occasions.</p>
+                        <ul>
+                            <li>100% Cotton</li>
+                            <li>Regular Fit</li>
+                            <li>Machine Washable</li>
+                            <li>Available in all sizes</li>
+                        </ul>
+                    </div>
+                    <div class="size-selector">
+                        <label>Size:</label>
+                        <select id="sizeSelect">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </div>
+                    <button class="whatsapp-btn" id="whatsappBtn">
+                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                    </button>
+                    <div class="add-to-cart">
+                        <button class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
